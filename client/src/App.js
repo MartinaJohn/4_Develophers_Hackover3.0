@@ -21,13 +21,13 @@
 
 // export default App;
 import React, { Component } from 'react';
-import Login from './Pages/Login' ;
+import Home from './Pages/Home' ;
 
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Login />
+				<Home />
 			</div>
 		);
 	}
