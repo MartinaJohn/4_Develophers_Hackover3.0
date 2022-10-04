@@ -13,7 +13,7 @@ export default function Navbar() {
         </a>
 
         <a
-          href="/home"
+          href="/"
         >
           About
         </a>
@@ -22,11 +22,14 @@ export default function Navbar() {
         >
           Events
         </a>
+        <a href="/login">
         <AiOutlineLogout
           color="#1b76ff"
           style={{ fontSize: "30px", cursor: "pointer" }}
           className={styles.navLogo}
         />
+        </a>
+        
       </Row>
     </Row>
   );
