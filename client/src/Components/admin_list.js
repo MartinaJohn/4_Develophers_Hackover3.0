@@ -16,12 +16,13 @@ const Exercise = props => (
   </tr>
 )
 
-export default class ExercisesList extends Component {
+export default class AdminList extends Component {
   // render(){
   //   return(
   //     <div>This is list section</div>
   //   )
   // }
+  // Backend
   constructor(props) {
     super(props);
 
@@ -54,7 +55,7 @@ export default class ExercisesList extends Component {
       return <Exercise exercise={currentexercise} deleteExercise={this.deleteExercise} key={currentexercise._id}/>;
     })
   }
-
+// end backend
   render() {
     return (
       <div>
