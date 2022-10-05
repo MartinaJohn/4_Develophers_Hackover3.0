@@ -22,6 +22,7 @@ export default function Navbar() {
         >
           Events
         </a>
+      
         <a href="/login">
         <AiOutlineLogout
           color="#1b76ff"

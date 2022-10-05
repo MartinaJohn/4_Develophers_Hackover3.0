@@ -132,6 +132,7 @@ export default function Login() {
     await finishMutation.mutateAsync(data);
   };
   return (
+
         <div className={styles.regContainer}>
     <Navbar/>
           <div className={styles.containerController}>
@@ -182,4 +183,5 @@ export default function Login() {
           </div>
         </div>
       );
+
 }
