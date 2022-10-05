@@ -1,0 +1,75 @@
+.courseContainer {
+    padding-bottom: 5rem;
+    .containerController {
+      width: 80%;
+      margin: auto;
+      .heading {
+        font-size: 1.4rem;
+        padding-top: 4rem;
+        text-align: center;
+        margin: 0;
+      }
+      .divider {
+        background-color: #1b76ff;
+        width: 20%;
+        min-width: 2rem;
+        height: 3.5px;
+        margin: 0.4rem auto;
+      }
+      h2 {
+        font-size: 1.5rem;
+        padding-top: 4rem;
+      }
+      .moduleItem {
+        cursor: pointer;
+        border-top: 3.5px solid;
+        padding-top: 2.5px;
+        width: 30%;
+        margin: 1.5rem 0;
+        margin-right: 1rem;
+        transition: 0.1s all ease-in-out;
+        &:hover {
+          border-top: 6px solid;
+          padding-top: 0px;
+        }
+        h3 {
+          margin-top: 1rem;
+          font-size: 1.25rem;
+          font-weight: 500;
+        }
+        h4 {
+          color: #8c8c8c;
+        }
+        .moduleFooter {
+          margin: 2rem 0;
+        }
+      }
+      img {
+        width: 25rem;
+        margin: 5rem 0;
+      }
+    }
+  }
+  
+  .innerContainer {
+    .containerController {
+      width: 80%;
+      margin: auto;
+      .heading {
+        font-size: 1.4rem;
+        padding-top: 4rem;
+        text-align: center;
+        margin: 0;
+      }
+      .divider {
+        background-color: #1b76ff;
+        width: 20%;
+        min-width: 2rem;
+        height: 3.5px;
+        margin: 0.4rem auto;
+      }
+      h3 {
+        margin-top: 3rem;
+      }
+    }
+  }

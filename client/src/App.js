@@ -1,36 +1,28 @@
-// import React from 'react';
-// import { BrowserRouter, Routes,Route } from "react-router-dom"
-// // import Login from "./Pages/Login";
-// import SignInOutContainer from './Containers/container';
 
-// function App() {
-//   return (
-//     <BrowserRouter>
-//     <div className="container">
-//     {/* <Navbar /> */}
-//       <br />
-//       <Routes>
-//         <Route path = "/login" exact element = {<SignInOutContainer />} /> 
-//       </Routes>
-//     </div>
+import { BrowserRouter, Routes,Route } from "react-router-dom"
+import React from 'react';
+import Home from './Pages/Home' ;
+import Login from './Pages/Login';
+import Events from './Pages/Events';
+import AdminList from './Components/admin_list';
+
+function App() {
+  return (
+    <BrowserRouter>
+    <div className="container">
+      <Routes>
+        <Route path = "/" element = {<Home />} />
+        <Route path = "/login" exact element = {<Login />} />
+        <Route path = "/events" exact element = {<Events />} /> 
+        <Route path = "/admin_list" exact element = {<AdminList />} />
+
+
+      </Routes>
+    </div>
       
-//     </BrowserRouter>
+    </BrowserRouter>
       
-//   );
-// }
-
-// export default App;
-import React, { Component } from 'react';
-import Login from './Pages/Login' ;
-
-class App extends Component {
-	render() {
-		return (
-			<div className="App">
-				<Login />
-			</div>
-		);
-	}
+  );
 }
 
 export default App;
