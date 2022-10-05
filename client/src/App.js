@@ -4,6 +4,7 @@ import React from 'react';
 import Home from './Pages/Home' ;
 import Login from './Pages/Login';
 import Events from './Pages/Events';
+import Signup from "./Pages/Signup";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route path = "/" element = {<Home />} />
         <Route path = "/login" exact element = {<Login />} />
         <Route path = "/events" exact element = {<Events />} /> 
-
+        <Route path = "/register" exact element = {<Signup />} />
       </Routes>
     </div>
       

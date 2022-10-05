@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import styles from "../styles/Register.module.scss";
 
+
 export default function Login() {
 
   return (
@@ -11,16 +12,26 @@ export default function Login() {
       <div className={styles.containerController}>
         <Card className={styles.card}>
         <div className={styles.cardBody}>
-          <h1>Sign in</h1>
-          <h2>
-            Don't have an account? <a href="/register">Sign Up</a>
-          </h2>
+          <h1>Sign up</h1>
+          
           <br />
           <Form
             name="register-form"
             initialValues={{ remember: true }}
             // onFinish={onFinish}
           >
+            <Form.Item
+              name="name"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your name!",
+                },
+              ]}
+            >
+                <Input placeholder="Name" />
+            </Form.Item>
+              <br />
             <Form.Item
               name="email"
               rules={[
@@ -46,6 +57,18 @@ export default function Login() {
               <Input type="password" placeholder="Password" />
             </Form.Item>
             <br />
+            <Form.Item
+              name="location"
+              rules={[
+                {
+                  required: true,
+                  message: "Please input your location!",
+                },
+              ]}
+            >
+              <Input placeholder="Location" />
+            </Form.Item>
+            <br />
             <Button
               type="primary"
               htmlType="submit"
@@ -53,10 +76,13 @@ export default function Login() {
               // loading={loading}
               // disabled={loading}
             >
-              Sign Up
+              Sign In
             </Button>
             <br />
           </Form>
+          <h2>
+            Already have an account? <a href="/login">Sign in</a>
+          </h2>
           </div>
         </Card>
       </div>
