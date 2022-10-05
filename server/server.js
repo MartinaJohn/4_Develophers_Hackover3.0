@@ -3,6 +3,9 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
+const bodyParser=require('body-parser')
+const paymentRoute=require('./paymentRoute')
+
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -22,6 +25,10 @@ const usersRouter = require('./routes/user-hc');
 // app.use('/exercises',exercisesRouter);
 app.use('/users-hc', usersRouter);
 
+//payment integration
+app.use(bodyParser.json())
+app.use(cors())
+app.use('/api',paymentRoute);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
