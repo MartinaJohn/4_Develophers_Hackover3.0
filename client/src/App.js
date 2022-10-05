@@ -5,6 +5,7 @@ import Home from './Pages/Home' ;
 import Login from './Pages/Login';
 import Events from './Pages/Events';
 import Signup from "./Pages/Signup";
+import AdminList from './Components/admin_list';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         <Route path = "/login" exact element = {<Login />} />
         <Route path = "/events" exact element = {<Events />} /> 
         <Route path = "/register" exact element = {<Signup />} />
+        <Route path = "/admin_list" exact element = {<AdminList />} />
+
+
       </Routes>
     </div>
       

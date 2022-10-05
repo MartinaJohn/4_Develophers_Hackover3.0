@@ -30,7 +30,9 @@ export default function Navbar() {
           className={styles.navLogo}
         />
         </a>
-        
+        <a href="/admin_list">
+        Admin Dashboard
+        </a>
       </Row>
     </Row>
   );
